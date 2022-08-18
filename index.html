@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Deposit and Withdraw Form</title>
+  <!-- tailwind links  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- log in Section  -->
+  <header>
+
+    <img class="w-20 shadow-md mx-auto " src="images/4_GabuaWF_LogoIcon_Color.png">
+
+
+    <h1 class="text-5xl text-center mt-6">Welcome To <span class="font-bold text-blue-900">
+        GABUA WELFARE FOUNDATION</span></h1>
+  </header>
+  <main>
+    <section class="bg-green-400 w-9/12 mx-auto mt-12 p-8 shadow-md">
+      <h3 class="text-3xl mb-3 font-bold text-center text-orange-700 ">PLEASE LOG IN </h3>
+      <DIV>
+        <input class="w-9/12 block mb-2 px-3 border-2 border-blue-600 " type="email" id="user-email"
+          placeholder="YOUR EMAIL ADDRESS">
+        <input class="w-9/12 block mb-2 px-3 border-2 border-rose-600 " type="password" id="user-email"
+          placeholder="YOUR PASSWORD  ">
+        <BUTTON id="btn-submit"
+          class="bg-blue-600 hover:bg-green-600 px-7 py-2 text-white font-bold rounded-lg border">Submit</BUTTON>
+      </DIV>
+    </section>
+    <!-- Deposit / donation  and Cost / withdraw and Balance Section  -->
+    <h1 class="mt-6 text-3xl text-center font-medium text-blue-500 ">OUR ACCOUNT DESCRIPTION</h1>
+    <section class="mt-8">
+      <Div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+        <div class="bg-yellow-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Donation</h4>
+          <h2 class="text-5xl font-medium">TK<span id="deposit-total">00</span></h2>
+        </div>
+        <div class="bg-green-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Withdraw</h4>
+          <h2 class="text-5xl font-medium">TK<span id="withdraw-total">00</span></h2>
+        </div>
+        <div class="bg-sky-500 p-8 rounded-lg">
+          <h4 class="text-3xl">Balance</h4>
+          <h2 class="text-5xl font-medium">TK<span id="balance-total">00</span></h2>
+        </div>
+      </Div>
+    </section>
+
+    <!-- Deposit and Withdraw Section  -->
+
+    <section class="mt-8 w-3/4 mx-auto">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-blue-700 p-8 rounded-lg">
+          <h3 class="text-4xl text-white mb-4">Your Deposit </h3>
+          <input id="deposit-field" class="w-3/4 px-4 py-3 rounded block mb-2" type="text" placeholder="YOUR DEPOSIT">
+          <Button id="btn-deposit"
+            class="bg-white-600 hover:bg-sky-600 px-7 py-2 text-white font-bold rounded-lg border">Deposit</Button>
+        </div>
+        <div class="bg-indigo-700 p-8 rounded-lg">
+          <h3 class="text-4xl text-white mb-4">Your Withdraw </h3>
+          <input id="withdraw-field" class="w-3/4 px-4 py-3 rounded block mb-2" type="text" placeholder="YOUR WITHDRAW">
+          <Button id="btn-withdraw"
+            class="bg-white-600 hover:bg-sky-600 px-7 py-2 text-white font-bold rounded-lg border">Withdraw</Button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="FILE.JS"></script>
+
+</html>
